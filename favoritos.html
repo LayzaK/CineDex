@@ -14,27 +14,23 @@
     </header>
 
     <nav>
-        <a id="inicio" href="inicio.html">Inicio</a>
+        <a id="inicio-ref" href="inicio.html">Inicio</a>
          <div class="filtro-generos">
             <label for="genero">Filtrar por gênero:</label>
             <select id="genero-filtro">
-                <option value="todos">Todos</option>
-                <option value="acao">Ação</option>
-                <option value="comedia">Comédia</option>
-                <option value="drama">Drama</option>
-                <option value="terror">Terror</option>
-                <option value="ficcao">Ficção Científica</option>
-                <option value="romance">Romance</option>
-                <option value="animacao">Animação</option>
-                </select>
+                <option value="mais-recente">Mais recente</option>
+                <option value="mais-antigo">Mais antigo</option>
+            </select>
         </div>
-
-        <div class="lista-favoritos">
     </nav>
+
+     <div class="lista-favoritos">
+            <!-- Filmes favoritados serão exibidos aqui -->
+        </div>
 
     <footer>
         <p>&copy; 2025 CineDex. Todos os direitos reservados.</p>
     </footer>
-
+    <script src="script/favoritos.js"></script>
 </body>
 </html>
