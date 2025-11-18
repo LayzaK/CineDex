@@ -23,7 +23,7 @@
 
 ## 2. 💻 Tecnologias Utilizadas
 
-- **Front-end:** HTML5, CSS3.
+- **Front-end:** HTML5, CSS3 e Figma
 - **Linguagem Principal:** JavaScript (ES6+).
 - **API:** The Movie Database (TMDB) para dados de filmes, pôsteres e informações.
 
