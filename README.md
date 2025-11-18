@@ -5,6 +5,9 @@
   <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/figma.png" alt="Icone Figma" width="26"/>
   <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="Icone JavaScript" width="30"/>
 </div>
+<div align="center">
+  <img src="assets/2025-11-18 10-35-39.mp4" alt="Demonstração do Projeto" width="300"/>
+</div>
  Uma aplicação web que permite aos usuários explorar e salvar seus filmes favoritos usando a API do TMDB.
 
 ---
