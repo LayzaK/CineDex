@@ -2,7 +2,7 @@
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
-const ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MzAwNmUwNjczMzY1ZDFlNmY1MGQ2MTYzYjRhYjE2NyIsIm5iZiI6MTc1ODYzNzU0Ni42MjQsInN1YiI6IjY4ZDJhZGVhMjdjMjM2ZjNjMWNkODFiNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BJnh8774tvl4vi4gLRHxTUR-BHgVoabJP7kV30lEPQc";
+const ACCESS_TOKEN = "INSIRA A CHAVE AQUI";
 const BASE_URL = 'https://api.themoviedb.org/3/movie/popular';
 const movieListContainer = document.querySelector(".movie-list");
 
@@ -95,6 +95,14 @@ searchButton.addEventListener('click', () => {
     } else {
         fetchAndRenderMovies(DEFAULT_URL);
     }
+});
+
+searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        // e .preventDefault(); previne o comportamento padrão do Enter
+        e.preventDefault();
+        searchButton.click(); // Dispara o clique no botão de busca
+    }
 });
 
 

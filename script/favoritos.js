@@ -11,46 +11,6 @@ const options = {
     }
 };
 
-// --- Filtro recente e antigo ---
-
-// 1. escuta mudanças no select 
-genreFilterSelect.addEventListener("change", (evento) => {
-    const filtroSelecionado = evento.target.value;
-    ordenarFilmes(filtroSelecionado);
-});
-
-// 2. função de filtragem
-function ordenarFilmes(filtroParaOrdenar) {
-    // Coleta todos os cards e os converte em um Array para usar o .sort()
-    const cardsFilmesArray = Array.from(favoritesListContainer.querySelectorAll(".movie-card"));
-    
-    cardsFilmesArray.sort((cardA, cardB) =>{
-        const dataA = cardA.dataset.releaseDate || "0000-00-00";
-        const dataB = cardB.dataset.releaseDate || "0000-00-00";
-
-        // Converte em objetos Date para comparação
-        const dateA = new Date(dataA);
-        const dateB = new Date(dataB);
-
-        let comparacao = 0;
-
-        // Se a ordem for 'mais-antigo' (velho -> novo): A - B
-        if (filtroParaOrdenar === "mais-antigo") {
-            comparacao = dateA - dateB;
-        }
-        // Se a ordem for 'mais-recente' (novo -> velho): B - A
-        else if (filtroParaOrdenar === "mais-recente") {
-            comparacao = dateB - dateA;
-        }
-        return comparacao;
-    });
-
-    // Limpa o contêiner e insere os cards na nova ordem
-    favoritesListContainer.innerHTML = "";
-    cardsFilmesArray.forEach(card => {
-        favoritesListContainer.appendChild(card);
-    });
-}
 
 // --- Funções de Persistência ---
 

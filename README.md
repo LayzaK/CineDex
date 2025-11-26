@@ -19,7 +19,6 @@
 - **Detalhes do Filme:** Permite clicar em um card para ver a página de informações detalhadas (`infofilme.html`).
 - **Persistência de Dados:** Salva e mantém a lista de favoritos no navegador (mesmo após fechar a aba).
 - **Interação de Favorito:** Permite adicionar ou remover um filme da lista de favoritos com um clique.
-- **Ordenação por Lançamento:** Permite ao usuário ordenar a lista de favoritos por **Mais Recente** ou **Mais Antigo**.
 - **Tratamento de Dados:** Lida com requisições assíncronas usando a API do TMDB (The Movie Database).
 
 ---
@@ -49,7 +48,7 @@
 
 1. **Clonar o Repositório:** `git clone https://github.com/LayzaK/CineDex.git`
 2. **Acessar a Pasta:** `cd CineDex`
-3. **Executar:** Basta abrir o arquivo `inicio.html` , `favoritos.html` ou `infofilmes.html` diretamente no navegador.
+3. **Executar:** Basta abrir o arquivo `index.html` , `favoritos.html` ou `infofilmes.html` diretamente no navegador.
 
 ---
 
