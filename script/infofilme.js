@@ -1,4 +1,4 @@
-const ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MzAwNmUwNjczMzY1ZDFlNmY1MGQ2MTYzYjRhYjE2NyIsIm5iZiI6MTc1ODYzNzU0Ni42MjQsInN1YiI6IjY4ZDJhZGVhMjdjMjM2ZjNjMWNkODFiNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BJnh8774tvl4vi4gLRHxTUR-BHgVoabJP7kV30lEPQc";
+const ACCESS_TOKEN = "INSIRA SUA CHAVE DA API AQUI";
 const BASE_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&primary_release_year=2025';
 
 const options = {
